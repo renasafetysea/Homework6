@@ -11,29 +11,24 @@ public class Main {
             for (int i = 0; i < arr.length; i++) {
                 arr[i] = random.nextInt(100_000) + 100_000;
                 sum += arr[i];
-                {
-                    System.out.println("Сумма трат за месяц составила " + arr[i] + "рублей");
-                }
+                System.out.println("Сумма трат за месяц составила " + arr[i] + "рублей");
                 System.out.println(sum);
 
                 int max = arr[0];
                 int min = arr[0];
                 max = Math.max(max, arr[i]);
                 min = Math.min(min, arr[i]);
-                {
-                    System.out.println("Max: " + max);
-                    System.out.println("Min: " + min);
-                }
+                System.out.println("Max: " + max);
+                System.out.println("Min: " + min);
+
             }
             System.out.println("Среднее арифметическое всех элементов: " + sum / arr.length);
-            {
 
                 char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
 
-                for (int i = reverseFullName.length - 1; i >= 0; i--) {
+                for (int i = reverseFullName.length - 1; i >= 0; i--)
                     System.out.print(reverseFullName[i]);
-                }
-                return arr;
-            }
+
+            return arr;
         }
-}
+    }
